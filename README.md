@@ -6,7 +6,7 @@ A rigorously curated bibliography of **continuous representations that are direc
 > **Scientific-scope gate:** continuity must be central to the method, not merely cited as background.  
 > **Venue-quality gate:** journal papers must be **CAS (中科院) Category 1/2 OR JCR Q1**; conference papers must be **CCF-A Full/Regular papers**. Preprint-only papers, Workshops, Findings, Short/Demo papers, and non-CCF-A conferences are excluded from the main list.
 
-**Current audited collection:** 108 papers · 95 journal papers · 13 CCF-A conference papers · 41 verified official code/project links · re-audited **2026-10-07**.
+**Current audited collection:** 107 core papers · 94 journal papers · 13 CCF-A conference papers · 41 verified official code/project links · paper-level continuity audit completed **2026-10-07**.
 
 The CCF 2026 rules explicitly state that only Full/Regular conference papers count; Short, Demo, Technical Brief, Summary, Findings, and co-located Workshops are outside the recommended-conference scope. See [CURATION.md](CURATION.md) and the audit tables under [data/](data/).
 
@@ -19,7 +19,7 @@ The CCF 2026 rules explicitly state that only Full/Regular conference papers cou
 - [NeRF, Radiance & Implicit Surface Fields](#nerf-radiance-implicit-surface-fields) (11)
 - [Gaussian Splatting & Explicit Continuous Primitives](#gaussian-splatting-explicit-continuous-primitives) (16)
 - [Continuous Feature Fields, Detection & GeoAI](#continuous-feature-fields-detection-geoai) (2)
-- [Critical / Negative Evidence](#critical-negative-evidence) (1)
+- [Context / Negative Evidence](#context-negative-evidence) (not counted in the 107-paper core)
 
 ---
 
@@ -172,12 +172,12 @@ Continuous latent/geospatial feature fields and remote-sensing detection models 
 - **GAIR: Location-Aware Self-Supervised Contrastive Pre-Training with Geo-Aligned Implicit Representations** — *ISPRS JPRS, 2026*. [Paper](https://www.sciencedirect.com/science/article/pii/S092427162600208X) · `CAS 1 / JCR Q1`
 - **NeRI: Implicit Neural Representation for Infrared Small Target Detection** — *IEEE TGRS, 2025*. [Paper](https://doi.org/10.1109/TGRS.2025.3633281) · `CAS 1 / JCR Q1`
 
-<a id="critical-negative-evidence"></a>
-## Critical / Negative Evidence
+<a id="context-negative-evidence"></a>
+## Context / Negative Evidence
 
-High-quality counter-evidence used to delimit when a learned continuous representation is not beneficial.
+This section is **not counted in the 107-paper core bibliography**. It preserves high-quality counter-evidence that is useful for delimiting Continuous Remote Sensing but does not itself pass the direct remote-sensing/EO scientific-scope gate.
 
-- **Performance and Efficiency of Climate In Situ Data Reconstruction: Why Optimized IDW Outperforms Kriging and Implicit Neural Representation** — *IEEE TGRS, 2026*. [Paper](https://doi.org/10.1109/TGRS.2026.3701545) · `CAS 1 / JCR Q1`
+- **Performance and Efficiency of Climate In Situ Data Reconstruction: Why Optimized IDW Outperforms Kriging and Implicit Neural Representation** — *IEEE TGRS, 2026*. [Paper](https://doi.org/10.1109/TGRS.2026.3701545) · `CAS 1 / JCR Q1` · `CONTEXT ONLY: in-situ station reconstruction`
 
 ---
 
@@ -186,7 +186,9 @@ High-quality counter-evidence used to delimit when a learned continuous represen
 This list is deliberately narrower than a general INR / neural-field / neural-operator reading list.
 
 - [CURATION.md](CURATION.md): exact scientific-scope and venue-quality rules.
-- [data/papers.csv](data/papers.csv): structured main bibliography with paper/code links and quality evidence.
+- [data/papers.csv](data/papers.csv): structured **107-paper core bibliography** with paper/code links and quality evidence.
+- [data/paper_level_audit.csv](data/paper_level_audit.csv): paper-by-paper continuity evidence, including `continuity_variable`, `what_is_continuous`, `why_continuous_remote_sensing`, and `scope_decision`.
+- [data/context_negative_evidence.csv](data/context_negative_evidence.csv): useful counter-evidence kept outside the counted core bibliography.
 - [data/venue_quality_audit.csv](data/venue_quality_audit.csv): venue-level PASS/FAIL audit.
 - [data/excluded_by_quality.csv](data/excluded_by_quality.csv): papers removed from the previous strict-scope list solely because they fail the venue-quality gate.
 - [data/excluded_from_ledger_v2.csv](data/excluded_from_ledger_v2.csv): earlier scope/relevance exclusions.
