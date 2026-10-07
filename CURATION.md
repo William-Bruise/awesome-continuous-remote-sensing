@@ -1,42 +1,51 @@
 # Curation Policy
 
-This repository is the **strict remote-sensing bibliography** for continuous remote sensing. It is not a general neural-field reading list.
+This repository is intended to support a scholarly review of **Continuous Remote Sensing**. Inclusion is conservative: it is better to omit a borderline paper than to inflate the bibliography with loosely related or weak-venue work.
 
-## Inclusion test
+## Gate A — scientific relevance
 
-A paper is included only if **both** conditions hold:
+A paper must directly study remote sensing, Earth observation, photogrammetry/geospatial sensing, atmospheric/ocean/ionospheric sensing, or geophysical sensing/inversion, and continuity must be central to the method.
 
-1. **Direct sensing relevance.** The paper studies Earth observation, remote sensing, photogrammetry/geospatial sensing, atmospheric/ocean/ionospheric sensing, or geophysical sensing/inversion.
-2. **Continuity is central.** At least one of the following is part of the method itself, not just background terminology:
-   - coordinate/function/field representation over continuous space, wavelength, time, view, or physical parameters;
-   - genuine arbitrary/continuous-scale or off-grid querying;
-   - continuous tensor/function factorization;
-   - neural operator learning between physical fields/functions, with grid/discretization/location flexibility as a core property;
-   - remote-sensing NeRF / radiance field / implicit surface;
-   - remote-sensing Gaussian field / Gaussian splatting as the scene or signal representation.
+At least one of the following must be a substantive modeling mechanism:
 
-## Explicit exclusions
+- continuous coordinate/function/field representation over space, wavelength, time, view, or physical parameters;
+- genuine arbitrary/continuous-scale or off-grid querying;
+- continuous tensor/function factorization;
+- neural-operator mapping between fields/functions where function-space/discretization behavior is part of the method;
+- remote-sensing NeRF / radiance field / implicit surface;
+- remote-sensing Gaussian field / Gaussian splatting as the represented scene or signal.
 
-The main list intentionally excludes:
+Generic SIREN, LIIF, NeRF, FNO, 3DGS, DeepSDF, etc. are **not** included merely as foundations. Likewise, ordinary fixed-grid remote-sensing CNN/Transformer/Mamba papers are excluded when continuity is not methodological.
 
-- generic SIREN, Fourier Features, LIIF, NeRF, FNO, 3DGS, DeepSDF, etc. **when the paper itself has no direct remote-sensing/geoscience application**;
-- ordinary remote-sensing CNN/Transformer/Mamba methods that output only a fixed discrete grid and do not make continuity part of the model;
-- classical fusion/registration/interpolation baselines and broad task surveys whose main contribution is not continuous representation;
-- papers using the word “continuous” in an unrelated sense;
-- planetary/space-object reconstruction when it is outside the Earth-observation/geoscience scope.
+## Gate B — venue quality
 
-## Borderline rule
+### Journals
+A journal paper must satisfy **at least one** of:
+- CAS (中科院) major-category **1区 or 2区**; or
+- **JCR Q1** in at least one indexed category.
 
-For a borderline paper, ask: **if the continuous representation/operator were removed, would the paper still be essentially the same remote-sensing method?** If yes, exclude it.
+If publicly checkable evidence is ambiguous, the paper is held outside the main list until verified.
 
-## Evidence levels
+### Conferences
+A conference paper must be from a **CCF-A** conference and must be a **Full/Regular main-conference paper**.
 
-- **Core** — peer-reviewed and directly in scope.
-- **Extended** — directly in scope but in a specialized/adjacent venue or mainly a methodological bridge.
-- **Emerging** — workshop/preprint work directly in scope.
+The 2026 CCF rules explicitly exclude Short papers, Demo papers, Technical Briefs, Summaries, Findings, and co-located Workshops from the recommended-conference scope:
+https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml
+
+Accordingly, a paper can be technically important yet still remain outside this repository's main list if it is workshop-only, Findings-only, preprint-only, or from a non-CCF-A conference.
+
+## Borderline test
+
+Ask two questions:
+
+1. If the continuous representation/operator were removed, would the paper still be essentially the same method? If **yes**, exclude it.
+2. Does the final peer-reviewed venue pass Gate B? If **no** or **unverified**, exclude it from the main list.
 
 ## Audit trail
 
-The current list was re-audited on **2026-10-07** from the previous 127-paper working ledger plus a second targeted search/citation-chasing pass. Generic foundations and non-continuous remote-sensing baselines were removed from the public list, while direct continuous remote-sensing papers missing from the old ledger were added.
+- `data/papers.csv` contains the current main bibliography and per-paper venue-quality evidence.
+- `data/venue_quality_audit.csv` records the venue-level decision.
+- `data/excluded_by_quality.csv` preserves relevant papers removed only because of venue quality.
+- `data/excluded_from_ledger_v2.csv` preserves earlier relevance/scope exclusions.
 
-The list is intentionally conservative: **omission is preferable to including a paper whose relevance to continuous remote sensing cannot be defended clearly.**
+These thresholds are **repository curation rules**, not a blanket judgment on the scientific merit of excluded papers.
