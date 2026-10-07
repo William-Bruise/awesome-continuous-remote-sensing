@@ -43,9 +43,17 @@ Ask two questions:
 
 ## Audit trail
 
-- `data/papers.csv` contains the current main bibliography and per-paper venue-quality evidence.
+- `data/papers.csv` contains the current **core bibliography** and per-paper venue-quality evidence.
+- `data/paper_level_audit.csv` records the paper-level scientific-scope audit: the continuous variable, representation family, **what is continuous**, **why the paper belongs to Continuous Remote Sensing**, PASS/FAIL decision, and evidence source.
+- `data/context_negative_evidence.csv` preserves useful counter-evidence that does not pass the direct remote-sensing/EO scope gate and is therefore **not counted** in the core bibliography.
 - `data/venue_quality_audit.csv` records the venue-level decision.
 - `data/excluded_by_quality.csv` preserves relevant papers removed only because of venue quality.
 - `data/excluded_from_ledger_v2.csv` preserves earlier relevance/scope exclusions.
 
 These thresholds are **repository curation rules**, not a blanket judgment on the scientific merit of excluded papers.
+
+## Paper-level continuity test
+
+For every candidate, the audit must identify a concrete continuous object or variable (for example spatial coordinate, wavelength, time, view, scale, physical field, implicit surface, Gaussian scene field, or an explicitly function-space/discretization-aware operator). Naming an architecture such as FNO, PINN, NeRF, INR, or 3DGS is not sufficient evidence by itself.
+
+A `PASS` requires that removing the continuous representation/operator would materially change the proposed remote-sensing/geospatial/geophysical method. A `FAIL` is kept in the audit trail when continuity is only nominal, the neural operator is merely a fixed-grid backbone, 3DGS is not the represented sensing scene/signal, or the data/task itself falls outside the direct sensing scope.
