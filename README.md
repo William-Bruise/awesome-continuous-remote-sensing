@@ -6,7 +6,7 @@ A rigorously curated bibliography of **continuous representations that are direc
 > **Scientific-scope gate:** continuity must be central to the method, not merely cited as background.  
 > **Venue-quality gate:** journal papers must be **CAS (中科院) Category 1/2 OR JCR Q1**; conference papers must be **CCF-A Full/Regular papers**. Preprint-only papers, Workshops, Findings, Short/Demo papers, and non-CCF-A conferences are excluded from the main list.
 
-**Current audited collection:** 111 papers · 97 journal papers · 14 CCF-A conference papers · 41 verified official code/project links · re-audited **2026-10-07**.
+**Current audited collection:** 108 papers · 95 journal papers · 13 CCF-A conference papers · 41 verified official code/project links · re-audited **2026-10-07**.
 
 The CCF 2026 rules explicitly state that only Full/Regular conference papers count; Short, Demo, Technical Brief, Summary, Findings, and co-located Workshops are outside the recommended-conference scope. See [CURATION.md](CURATION.md) and the audit tables under [data/](data/).
 
@@ -14,8 +14,8 @@ The CCF 2026 rules explicitly state that only Full/Regular conference papers cou
 
 - [Spatial & Terrain Continuous Fields](#spatial-terrain-continuous-fields) (13)
 - [Satellite Video & Spatiotemporal EO](#satellite-video-spatiotemporal-eo) (8)
-- [Spectral & Spatial–Spectral Continuous Fields](#spectral-spatial-spectral-continuous-fields) (25)
-- [Continuous Physical & Geophysical Fields](#continuous-physical-geophysical-fields) (35)
+- [Spectral & Spatial–Spectral Continuous Fields](#spectral-spatial-spectral-continuous-fields) (24)
+- [Continuous Physical & Geophysical Fields](#continuous-physical-geophysical-fields) (33)
 - [NeRF, Radiance & Implicit Surface Fields](#nerf-radiance-implicit-surface-fields) (11)
 - [Gaussian Splatting & Explicit Continuous Primitives](#gaussian-splatting-explicit-continuous-primitives) (16)
 - [Continuous Feature Fields, Detection & GeoAI](#continuous-feature-fields-detection-geoai) (2)
@@ -65,7 +65,6 @@ Continuous wavelength or spatial–spectral function/operator models for HSI/MSI
 - **Arbitrary-scale spatial-spectral fusion using kernel integral and progressive resampling** — *Information Fusion, 2026*. [Paper](https://doi.org/10.1016/j.inffus.2026.104143) · [Code/Project](https://github.com/weili419/SFNO) · `CAS 1 / JCR Q1`
 - **DCMArb: Decoupled-Collaborative Mamba for Arbitrary-scale Hyperspectral Super-resolution** — *ISPRS JPRS, 2026*. [Paper](https://doi.org/10.1016/j.isprsjprs.2026.06.009) · [Code/Project](https://github.com/wangswhu/DCMArb) · `CAS 1 / JCR Q1`
 - **MGINR-WGAN: A Multiscale Guided Implicit Neural Representation Wasserstein GAN for Hyperspectral and Multispectral Image Fusion** — *IEEE JSTARS, 2026*. [Paper](https://doi.org/10.1109/JSTARS.2026.3697374) · [Code/Project](https://github.com/zhangyanxa/MGINR-WGAN) · `CAS 2 / JCR Q1`
-- **NODiff: Neural Operator Diffusion for Multispectral Image Fusion** — *AAAI, 2026*. [Paper](https://doi.org/10.1609/aaai.v40i6.42477) · `CCF-A Full/Regular`
 - **Solving Spatial-Spectral Fusion with Latent Spectral Operators** — *ICML, 2026*. [Paper](https://proceedings.mlr.press/v306/li26en.html) · [Code/Project](https://github.com/weili419/LSO) · `CCF-A Full/Regular`
 - **Spatial-Spectral Residuals Informed Diffusion Neural Operator for Pan-sharpening** — *CVPR, 2026*. [Paper](https://openaccess.thecvf.com/content/CVPR2026/html/Huang_Spatial-Spectral_Residuals_Informed_Diffusion_Neural_Operator_for_Pan-sharpening_CVPR_2026_paper.html) · `CCF-A Full/Regular`
 - **A spatial-frequency dual-domain implicit guidance method for hyperspectral and multispectral remote sensing image fusion based on Kolmogorov–Arnold Network** — *Information Fusion, 2025*. [Paper](https://doi.org/10.1016/j.inffus.2025.103261) · [Code/Project](https://github.com/chunyuzhu/SFIGNet) · `CAS 1 / JCR Q1`
@@ -97,7 +96,6 @@ Continuous physical fields, implicit geophysical inversion, PINNs, and neural op
 - **Adaptive SIREN-PINN With Principled Initialization: A Frequency-Aware and Singularity-Robust Framework for Solver-Free Acoustic Seismic Wave Modeling** — *IEEE TGRS, 2026*. [Paper](https://doi.org/10.1109/TGRS.2026.3655956) · `CAS 1 / JCR Q1`
 - **EFKAN: A KAN-Integrated Neural Operator for Efficient Magnetotelluric Forward Modeling** — *Computers & Geosciences, 2026*. [Paper](https://doi.org/10.1016/j.cageo.2025.106052) · [Code/Project](https://github.com/linfengyu77/EFKAN) · `CAS 2 / JCR Q1 (best category)`
 - **Enhancing Frequency Response in Implicit Full Waveform Inversion via Fourier Encoding** — *IEEE TGRS, 2026*. [Paper](https://doi.org/10.1109/TGRS.2026.3684378) · `CAS 1 / JCR Q1`
-- **Height-Aware Fourier Neural Operator for Near-Space Short-Term Wind Field Prediction: A Systematic Neural Operator Benchmark** — *IEEE TGRS, 2026*. [Paper](https://doi.org/10.1109/TGRS.2026.3724650) · `CAS 1 / JCR Q1`
 - **Implicit full waveform inversion with adaptive Fourier frequency bases learning** — *Geophysical Journal International, 2026*. [Paper](https://doi.org/10.1093/gji/ggaf404) · `CAS 2`
 - **Implicit Neural Representations for 3D Gravity Inversion** — *Computers & Geosciences, 2026*. [Paper](https://doi.org/10.1016/j.cageo.2025.106082) · `CAS 2 / JCR Q1 (best category)`
 - **Least-squares-embedded optimization for accelerated convergence of PINNs in high-frequency acoustic wavefield simulations** — *Computers & Geosciences, 2026*. [Paper](https://doi.org/10.1016/j.cageo.2026.106162) · `CAS 2 / JCR Q1 (best category)`
@@ -108,7 +106,6 @@ Continuous physical fields, implicit geophysical inversion, PINNs, and neural op
 - **Spatiotemporal Implicit Neural Representation for Ionospheric Tomography With Multi-LEO Occultation Data** — *IEEE TGRS, 2026*. [Paper](https://doi.org/10.1109/TGRS.2026.3667515) · `CAS 1 / JCR Q1`
 - **Three-dimensional inversion of gravity data using implicit neural representations and scientific machine learning** — *Scientific Reports, 2026*. [Paper](https://doi.org/10.1038/s41598-026-55960-5) · [Code/Project](https://zenodo.org/records/19440024) · `JCR Q1`
 - **Unveiling the Mechanism of Continuous Representation Full-Waveform Inversion: A Wave-Based Neural Tangent Kernel Framework** — *ICLR, 2026*. [Paper](https://proceedings.iclr.cc/paper_files/paper/2026/hash/c89f09849eb5af489abb122394ff0f0b-Abstract-Conference.html) · `CCF-A Full/Regular`
-- **A Feature Enhanced Autoencoder Integrated With Fourier Neural Operator for Intelligent Elastic Wavefield Modeling** — *IEEE TGRS, 2025*. [Paper](https://doi.org/10.1109/TGRS.2025.3542082) · `CAS 1 / JCR Q1`
 - **Bayesian seismic inversion with implicit neural representations** — *Geophysical Journal International, 2025*. [Paper](https://doi.org/10.1093/gji/ggaf249) · [Code/Project](https://github.com/DeepWave-KAUST/B-IntraSeismic-pub) · `CAS 2`
 - **Full-Waveform Inversion With Velocity Model Low-Rank Implicit Neural Representation** — *IEEE TGRS, 2025*. [Paper](https://doi.org/10.1109/TGRS.2025.3594184) · `CAS 1 / JCR Q1`
 - **Implicit multiparameter full waveform inversion of multioffset ground penetrating radar data** — *Geophysical Journal International, 2025*. [Paper](https://doi.org/10.1093/gji/ggae420) · `CAS 2`
