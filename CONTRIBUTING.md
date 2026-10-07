@@ -1,19 +1,25 @@
 # Contributing
 
-Contributions are welcome, but additions are screened conservatively because this list is intended to support a scholarly review.
+Contributions are welcome, but every proposed addition must pass both gates in [CURATION.md](CURATION.md).
 
-Before opening a PR, please verify that the paper passes **both** tests in [CURATION.md](CURATION.md):
-
-1. it directly addresses remote sensing / Earth observation / photogrammetry / geospatial or geophysical sensing; and
-2. continuous representation, continuous querying/scale, neural-operator field mapping, NeRF/implicit geometry, or Gaussian-field representation is central to the method.
-
-For each proposed paper, provide:
+Please provide:
 
 - exact paper title;
-- year and venue;
-- DOI, publisher page, or official proceedings/project page;
-- official code/project repository if verified;
-- one sentence explaining **what is continuous** and why it is central to the method;
-- the most appropriate category.
+- final publication year and venue;
+- DOI / official publisher or proceedings page;
+- official code/project repository, if verified;
+- one sentence stating **what is continuous** and why it is central to the method;
+- venue-quality evidence:
+  - journal: CAS major-category 1/2 **or** JCR Q1;
+  - conference: CCF-A **and** Full/Regular main-conference paper.
 
-Please do **not** add generic foundation papers merely because remote-sensing papers cite them. Do not add ordinary fixed-grid remote-sensing models whose only relation to continuous modeling is a baseline, preprocessing step, or wording in the introduction.
+Do not submit:
+
+- arXiv-only/preprint-only papers;
+- Workshop, Findings, Short, Demo, Technical Brief, or Summary papers;
+- non-CCF-A conference papers;
+- journal papers below both thresholds;
+- generic INR/NeRF/FNO/3DGS foundation papers with no direct remote-sensing/geoscience application;
+- ordinary fixed-grid remote-sensing methods where continuous representation is not central.
+
+When an official code repository cannot be verified, leave the code field blank rather than linking an unofficial reimplementation.
