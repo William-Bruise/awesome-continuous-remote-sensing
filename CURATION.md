@@ -1,59 +1,61 @@
-# Curation Policy
+# Curation Policy — IEEE GRSM White Paper Alignment
 
-This repository is intended to support a scholarly review of **Continuous Remote Sensing**. Inclusion is conservative: it is better to omit a borderline paper than to inflate the bibliography with loosely related or weak-venue work.
+**Revision: 2026-10-11.** This repository curates peer-reviewed work relevant to **Continuous Remote Sensing: From Discrete Observations to Continuous Earth Fields**.
 
-## Gate A — scientific relevance
+## Scientific scope: two positive gates
 
-A paper must directly study remote sensing, Earth observation, photogrammetry/geospatial sensing, atmospheric/ocean/ionospheric sensing, or geophysical sensing/inversion, and continuity must be central to the method.
+1. **Earth/remote-sensing relevance.** The paper must directly address Earth-observation, remote sensing, photogrammetry/geospatial observation, atmospheric/oceanic/ionospheric sensing, or geophysical sensing, reconstruction, forward modeling or inversion.
+2. **Continuity is substantive.** Identify the *continuous object* and its role: arbitrary 2-D/3-D coordinates, wavelength, time, altitude, viewing geometry, a spectral/spatiotemporal function, radiance/surface/scattering field, continuous tensor, or a field-to-field operator where the functional domain matters.
 
-At least one of the following must be a substantive modeling mechanism:
+A paper must pass **both** gates. Do not treat arbitrary neural activation, generic positional encoding, FNO/PINN/NeRF/3DGS terminology or multimodal feature concatenation as enough on their own.
 
-- continuous coordinate/function/field representation over space, wavelength, time, view, or physical parameters;
-- genuine arbitrary/continuous-scale or off-grid querying;
-- continuous tensor/function factorization;
-- neural-operator mapping between fields/functions where function-space/discretization behavior is part of the method;
-- remote-sensing NeRF / radiance field / implicit surface;
-- remote-sensing Gaussian field / Gaussian splatting as the represented scene or signal.
+## Venue gate — strict minimum JCR Q1
 
-Generic SIREN, LIIF, NeRF, FNO, 3DGS, DeepSDF, etc. are **not** included merely as foundations. Likewise, ordinary fixed-grid remote-sensing CNN/Transformer/Mamba papers are excluded when continuity is not methodological.
+- **Journals:** **JCR Q1 in at least one indexed JCR subject category**, according to the verifiable 2025 JCR edition (the latest available as of this update), not CAS quartile, SCImago/SJR Q1, or journal impact-factor magnitude. Record JCR category and the applicable year where possible. If conflicting evidence makes JCR Q1 unverifiable, hold outside the core pending manual verification.
+- **Conferences:** Full/Regular **main-conference** papers at the user-defined set: **CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, AAAI, ACM MM, SIGGRAPH, SIGGRAPH Asia**. SIGGRAPH/Asia technical papers often appear in *ACM Transactions on Graphics*; avoid double counting the conference/journal version. Other CCF-A papers may be considered only after explicit review.
+- **Not eligible:** preprint-only, workshops, Findings, short/extended abstracts, posters/demos, unverified conference tracks, journal venues with JCR Q2 or lower, or journals where only CAS Category 1/2 is known.
 
-## Gate B — venue quality
+**Examples of revised journal decisions (2025 JCR):** *Geophysical Journal International*: **Q2**, 35/103 in Geochemistry & Geophysics (Oxford publisher, https://academic.oup.com/gji/pages/about); *IEEE Transactions on Computational Imaging*: **Q2** (https://www.minicod.com/journals/ieee-transactions-on-computational-imaging-7888b16c); *International Journal of Digital Earth*: **Q1** (https://www.juqikan.com/sci/17538947.html). *IEEE GRSL* has Q1 in Geochemistry & Geophysics although Remote Sensing quartile may differ: only a **best-category JCR Q1** threshold is applied consistently.
 
-### Journals
-A journal paper must satisfy **at least one** of:
-- CAS (中科院) major-category **1区 or 2区**; or
-- **JCR Q1** in at least one indexed category.
+## Exactly three primary themes
 
-If publicly checkable evidence is ambiguous, the paper is held outside the main list until verified.
+### I. Representation of Continuous Geophysical Fields
 
-### Conferences
-A conference paper must be from a **CCF-A** conference and must be a **Full/Regular main-conference paper**.
+**Question:** How can underlying Earth quantities be expressed as queryable continuous functions/fields/tensors or spatial/temporal/spectral/3-D Gaussian/radiance models?
 
-The 2026 CCF rules explicitly exclude Short papers, Demo papers, Technical Briefs, Summaries, Findings, and co-located Workshops from the recommended-conference scope:
-https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml
+Typical single-modality examples: continuous-scale remote-sensing super-resolution; continuous spectrum/wavelength modeling; digital elevation fields; NeRF/3DGS scene representation; seismic 5-D interpolation (when no governing-law inference is primary).
 
-Accordingly, a paper can be technically important yet still remain outside this repository's main list if it is workshop-only, Findings-only, preprint-only, or from a non-CCF-A conference.
+### II. Harmonization of Heterogeneous Remote-Sensing Measurements
 
-## Borderline test
+**Question:** How does a continuous representation help reconcile observations from different sensors/modalities, resolutions, times or viewing geometries?
 
-Ask two questions:
+Examples: HSI–MSI/RGB fusion, PAN–MS pansharpening, optical–SAR implicit fusion, LiDAR–image NeRF/3DGS, satellite/street-view alignment, multiresolution or multi-temporal cloud reconstruction.
 
-1. If the continuous representation/operator were removed, would the paper still be essentially the same method? If **yes**, exclude it.
-2. Does the final peer-reviewed venue pass Gate B? If **no** or **unverified**, exclude it from the main list.
+**Counterexample:** concatenating SAR and optical feature tensors in a discrete CNN is *not* sufficient without a meaningful continuous representational mechanism.
 
-## Audit trail
+### III. Physical Inference from Continuous Geophysical Fields
 
-- `data/papers.csv` contains the current **core bibliography** and per-paper venue-quality evidence.
-- `data/paper_level_audit.csv` records the paper-level scientific-scope audit: the continuous variable, representation family, **what is continuous**, **why the paper belongs to Continuous Remote Sensing**, PASS/FAIL decision, and evidence source.
-- `data/context_negative_evidence.csv` preserves useful counter-evidence that does not pass the direct remote-sensing/EO scope gate and is therefore **not counted** in the core bibliography.
-- `data/venue_quality_audit.csv` records the venue-level decision.
-- `data/excluded_by_quality.csv` preserves relevant papers removed only because of venue quality.
-- `data/excluded_from_ledger_v2.csv` preserves earlier relevance/scope exclusions.
+**Question:** How are physical laws, field-to-field operators, inversion or geophysical/biophysical parameter inference enabled or constrained by continuous representations?
 
-These thresholds are **repository curation rules**, not a blanket judgment on the scientific merit of excluded papers.
+Examples: wave/EM/ionospheric forward models, PINN PDE residuals, operator surrogates, velocity/resistivity/gravity inversion, radiance-geometry models linked to physically meaningful leaf-area inference.
 
-## Paper-level continuity test
+**Distinguish:** physics-informed constraints (explicit PDE/observation laws), data-driven neural-operator surrogate maps, and physical parameter inversion; they are **not identical**.
 
-For every candidate, the audit must identify a concrete continuous object or variable (for example spatial coordinate, wavelength, time, view, scale, physical field, implicit surface, Gaussian scene field, or an explicitly function-space/discretization-aware operator). Naming an architecture such as FNO, PINN, NeRF, INR, or 3DGS is not sufficient evidence by itself.
+## Assignment rule
 
-A `PASS` requires that removing the continuous representation/operator would materially change the proposed remote-sensing/geospatial/geophysical method. A `FAIL` is kept in the audit trail when continuity is only nominal, the neural operator is merely a fixed-grid backbone, 3DGS is not the represented sensing scene/signal, or the data/task itself falls outside the direct sensing scope.
+Give each paper **one primary theme** chosen by the main scientific objective. Add `secondary_theme` for genuine overlaps rather than duplicating the paper count. E.g., *Physics-informed Neural Operator for Pansharpening* primarily harmonizes PAN/MS observations (**II**), secondarily exploits physical/sensor constraints (**III**). *NeRF-LAI* primarily infers vegetation physical parameters (**III**), with NeRF field modeling as a secondary representation (**I**).
+
+## Paper-level evidence and reproducibility
+
+- `data/papers.csv` is the **core** list (one row per included work), with `category` = primary theme and `subtopic` = detailed subject.
+- `data/paper_level_audit.csv` archives both included and excluded candidates. Required: `continuity_variable`, `what_is_continuous`, `why_continuous_remote_sensing`, `review_decision`, and `classification_reason`.
+- `data/venue_quality_audit.csv` tracks venue evidence; `data/excluded_by_quality.csv` and `data/excluded_from_three_theme_review.csv` preserve negative decisions rather than deleting inconvenient papers.
+- Historic `data/excluded_from_ledger_v2.csv` and `data/context_negative_evidence.csv` are retained as audit history, not counted in the core.
+- Publication links should point to publisher DOI/proceedings where available. Only link verified **official, materially released** code/project pages. A promised-but-unreleased codebase must keep `code_url` blank. Legacy code links were not exhaustively re-tested during this taxonomy migration.
+- Incomplete venue/continuity verification is an uncertainty marker, **not** affirmative evidence of inclusion.
+
+## What is NOT included as core
+
+The original general-purpose INR, NeRF, FNO and *3D Gaussian Splatting for Real-Time Radiance Field Rendering* (SIGGRAPH 2023 / ACM TOG) are methodological background, not direct Earth sensing papers. Specialized continuous models for unrelated medical/consumer imaging, ordinary fixed-grid multisensor fusion, workshop-only manuscripts and task-specific latent features without geophysical field interpretation are also excluded.
+
+The journal thresholds are strict **bibliography-selection rules**, not judgments of technical significance or citation impact.

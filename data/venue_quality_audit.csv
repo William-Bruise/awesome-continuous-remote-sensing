@@ -1,28 +1,28 @@
 venue,type,decision,quality_basis,evidence_url,notes
-AAAI,Conference,PASS,Conference — CCF-A Full/Regular,https://www.ccf.org.cn/Academic_Evaluation/AI/,Only main-track Full/Regular papers are eligible.
-ACM MM,Conference,PASS,Conference — CCF-A Regular,https://www.ccf.org.cn/Academic_Evaluation/CGAndMT/zgjsjxhtjgjxshy/al/2017-03-17/588341.shtml,Only main-track Full/Regular papers are eligible.
-CVPR,Conference,PASS,Conference — CCF-A Full/Regular,https://www.ccf.org.cn/Academic_Evaluation/AI/,Only main-track Full/Regular papers are eligible.
-Computers & Geosciences,Journal,PASS,Journal — CAS 2 / JCR Q1 (best category),https://www.ablesci.com/journal/detail?id=DaBBLr,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-Engineering Applications of Artificial Intelligence,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=pP3GOr,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-Geophysical Journal International,Journal,PASS,Journal — CAS 2,https://www.ablesci.com/journal/detail?id=r0zMW5,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-Geoscientific Model Development,Journal,PASS,Journal — CAS 2 / JCR Q1,https://www.ablesci.com/journal/detail?id=pqOkAD,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-ICLR,Conference,PASS,Conference — CCF-A Full/Regular,https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml,Only main-track Full/Regular papers are eligible.
-ICML,Conference,PASS,Conference — CCF-A Full/Regular,https://www.ccf.org.cn/Academic_Evaluation/AI/,Only main-track Full/Regular papers are eligible.
-IEEE GRSL,Journal,PASS,Journal — JCR Q1 (best category),https://www.ablesci.com/journal/detail?id=5j2q45,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-IEEE JSTARS,Journal,PASS,Journal — CAS 2 / JCR Q1,https://www.iikx.com/sci/earthscience/12970.html,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-IEEE TCSVT,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=5yNyVD,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-IEEE TGRS,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=5EBZBD,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-IEEE Transactions on Computational Imaging,Journal,PASS,Journal — CAS 2,https://www.ablesci.com/journal/detail?id=5KAndr,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-IEEE Transactions on Multimedia,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=52AdWp,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-ISPRS JPRS,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=pBMMQr,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-Information Fusion,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=DlZBEp,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-Int. J. Applied Earth Observation and Geoinformation,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=r7R3BD,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-JGR: Solid Earth,Journal,PASS,Journal — CAS 2 / JCR Q1,https://www.ablesci.com/journal/detail?id=5KAvLr,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-Nature Communications,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=pB7xG5,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-NeurIPS,Conference,PASS,Conference — CCF-A Full/Regular,https://www.ccf.org.cn/Academic_Evaluation/AI/,Only main-track Full/Regular papers are eligible.
-Optics & Laser Technology,Journal,PASS,Journal — CAS 2 / JCR Q1,https://www.ablesci.com/journal/detail?id=52a9Xp,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-Remote Sensing of Environment,Journal,PASS,Journal — CAS 1 / JCR Q1,https://www.ablesci.com/journal/detail?id=5jdnjr,Passes repository journal gate (CAS 1/2 OR JCR Q1).
-Scientific Reports,Journal,PASS,Journal — JCR Q1,https://www.ablesci.com/journal/detail?id=rAXQeD,Passes repository journal gate (CAS 1/2 OR JCR Q1).
+AAAI,Conference,PASS,Top-conference Full/Regular main-track,https://www.ccf.org.cn/Academic_Evaluation/AI/,Eligible user-approved top venue; workshops / short / Findings / demos excluded.
+ACM MM,Conference,PASS,Top-conference Full/Regular main-track,https://www.ccf.org.cn/Academic_Evaluation/CGAndMT/zgjsjxhtjgjxshy/al/2017-03-17/588341.shtml,Eligible user-approved top venue; workshops / short / Findings / demos excluded.
+CVPR,Conference,PASS,Top-conference Full/Regular main-track,https://www.ccf.org.cn/Academic_Evaluation/AI/,Eligible user-approved top venue; workshops / short / Findings / demos excluded.
+Computers & Geosciences,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=DaBBLr,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+Engineering Applications of Artificial Intelligence,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=pP3GOr,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+Geophysical Journal International,Journal,FAIL,"Journal — JCR Q2 (2025, Geochemistry & Geophysics)",https://academic.oup.com/gji/pages/about,"Oxford publisher: rank 35/103 in 2025; below JCR Q1 (top ~25%), despite CAS Category 2."
+Geoscientific Model Development,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=pqOkAD,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+ICLR,Conference,PASS,Top-conference Full/Regular main-track,https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml,Eligible user-approved top venue; workshops / short / Findings / demos excluded.
+ICML,Conference,PASS,Top-conference Full/Regular main-track,https://www.ccf.org.cn/Academic_Evaluation/AI/,Eligible user-approved top venue; workshops / short / Findings / demos excluded.
+IEEE GRSL,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=5j2q45,JCR Q1 in Geochemistry & Geophysics (best subject category); Remote Sensing quartile may differ; reviewed under best-category JCR Q1 rule.
+IEEE JSTARS,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.iikx.com/sci/earthscience/12970.html,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+IEEE TCSVT,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=5yNyVD,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+IEEE TGRS,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=5EBZBD,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+IEEE Transactions on Computational Imaging,Journal,FAIL,Journal — JCR Q2 (2025),https://www.minicod.com/journals/ieee-transactions-on-computational-imaging-7888b16c,2025 JCR Q2; CAS Category 2 or SJR Q1 cannot satisfy this review's new JCR Q1 criterion.
+IEEE Transactions on Multimedia,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=52AdWp,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+ISPRS JPRS,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=pBMMQr,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+Information Fusion,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=DlZBEp,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+Int. J. Applied Earth Observation and Geoinformation,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=r7R3BD,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+JGR: Solid Earth,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=5KAvLr,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+Nature Communications,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=pB7xG5,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+NeurIPS,Conference,PASS,Top-conference Full/Regular main-track,https://www.ccf.org.cn/Academic_Evaluation/AI/,Eligible user-approved top venue; workshops / short / Findings / demos excluded.
+Optics & Laser Technology,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=52a9Xp,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+Remote Sensing of Environment,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=5jdnjr,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
+Scientific Reports,Journal,PASS,Journal — JCR Q1 (at least one subject category),https://www.ablesci.com/journal/detail?id=rAXQeD,Passes strict JCR Q1 in at least one indexed subject category; CAS category does not independently determine admission.
 Advanced Intelligent Discovery,Journal,FAIL,Does not satisfy strict repository gate,https://www.wiley.com/en-no/journal-finder/journal/aidi,Fails strict quality gate: no verified CAS 1/2 or JCR Q1 evidence.
 CVPR EarthVision Workshop,Conference/Preprint,FAIL,Does not satisfy strict repository gate,https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml,Workshop paper; CCF rules count only Full/Regular papers and exclude co-located workshops.
 CVPR INRV Workshop,Conference/Preprint,FAIL,Does not satisfy strict repository gate,https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml,Workshop paper; CCF rules count only Full/Regular papers and exclude co-located workshops.
@@ -32,3 +32,6 @@ ISPRS Annals,Conference/Preprint,FAIL,Does not satisfy strict repository gate,ht
 WACV,Conference/Preprint,FAIL,Does not satisfy strict repository gate,https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml,Conference is not CCF-A.
 WACV CV4EO Workshop,Conference/Preprint,FAIL,Does not satisfy strict repository gate,https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml,Workshop and not CCF-A main conference.
 arXiv,Conference/Preprint,FAIL,Does not satisfy strict repository gate,https://arxiv.org/,Preprint-only; no qualifying peer-reviewed venue.
+International Journal of Digital Earth,Journal,PASS,"Journal — JCR Q1 (2025, Remote Sensing and Physical Geography)",https://www.juqikan.com/sci/17538947.html,"JCR Q1 reported in Remote Sensing (14/66) and Geography, Physical; newly included multimodal 3D Gaussian work."
+SIGGRAPH,Conference,ELIGIBLE,Top graphics conference — Full Technical Papers,https://s2026.siggraph.org/,Accept relevant remote-sensing technical papers (including ACM TOG SIGGRAPH issue); the foundational 2023 3DGS paper is outside direct Earth-sensing scope.
+SIGGRAPH Asia,Conference,ELIGIBLE,Top graphics conference — Full Technical Papers,https://asia.siggraph.org/,"Accept relevant Full Technical Papers; exclude posters, demos, short track, general foundation work."

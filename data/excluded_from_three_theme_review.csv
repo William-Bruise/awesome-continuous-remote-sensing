@@ -1,0 +1,2 @@
+title,year,venue,paper_url,reason,continuity_variable,legacy_category,decision_date
+NeRI: Implicit Neural Representation for Infrared Small Target Detection,2025,IEEE TGRS,https://doi.org/10.1109/TGRS.2025.3633281,"Models auxiliary target-detection features without a demonstrated continuous geophysical observable, heterogeneous-measurement harmonization, or physical inference",2-D spatial coordinates -> high-frequency target structural features,"Continuous Feature Fields, Detection & GeoAI",2026-10-11
